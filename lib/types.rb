@@ -1,12 +1,11 @@
 class Type
   @@types = []
 
-
   def Type.all
     @@types
   end
 
-  def save
+    def save
     @@types << self
   end
 
@@ -16,10 +15,15 @@ class Type
 
   def initialize(type)
     @type = type
+    @food = []
   end
 
   def type
     @type
+  end
+
+  def food
+    @food
   end
 
 end
