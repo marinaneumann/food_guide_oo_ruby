@@ -1,6 +1,4 @@
 class Food
-  @@food = []
-
   def initialize(food)
     @food = food
   end
