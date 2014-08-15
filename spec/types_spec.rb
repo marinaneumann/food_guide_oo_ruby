@@ -36,7 +36,7 @@ describe Type do
   it 'adds food places to a type class' do
     test_type = Type.new('Mexican')
     test_food = Food.new('Por que no?')
-    test_type.add_info(test_food)
+    test_type.add_food(test_food)
     expect(test_type.food).to eq ([test_food])
   end
 
