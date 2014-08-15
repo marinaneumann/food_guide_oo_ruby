@@ -20,4 +20,11 @@ describe Type do
     end
   end
 
+  describe '.clear' do
+    it 'empties out all of the saved food groups' do
+      Type.new('American').save
+      Type.clear
+      expect(Type.all).to eq []
+    end
+  end
 end
