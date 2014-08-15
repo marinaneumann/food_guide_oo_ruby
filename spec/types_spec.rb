@@ -31,4 +31,13 @@ describe Type do
       expect(Type.all).to eq []
     end
   end
+
+  describe '#delete' do
+    it 'deletes type from array of saved types' do
+      test_type = Type.new('Indian')
+      test_type.delete
+      expect(Type.all).to eq []
+    end
+  end
+
 end
