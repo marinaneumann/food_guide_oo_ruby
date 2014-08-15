@@ -26,4 +26,8 @@ class Type
     @food
   end
 
+  def add_food(places)
+    @food << places
+  end
+
 end
