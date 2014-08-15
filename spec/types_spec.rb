@@ -2,9 +2,6 @@ require 'rspec'
 require 'types'
 
 describe Type do
-  before do
-    Type.clear
-  end
 
   describe '.all' do
     it 'is an empty array for types' do
