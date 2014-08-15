@@ -1,6 +1,5 @@
 require './lib/types'
 require './lib/restaurants'
-require 'pry'
 
 def main_menu
   loop do
@@ -41,7 +40,6 @@ def view_food_world
   input = gets.chomp
   Type.all.each do |type|
     if input == type.type
-
       Type.all.each do |restaurant|
         puts "Here are some AWESOME places to try:"
         puts restaurant.food
