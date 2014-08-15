@@ -1,0 +1,23 @@
+require 'rspec'
+require 'types'
+describe Type do
+  it 'initializes a new food group' do
+    test_type = Type.new('Mexican')
+    expect(test_type).to be_an_instance_of Type
+  end
+
+  describe '.all' do
+    it 'is an empty array for types' do
+      expect(Type.all).to eq []
+    end
+  end
+
+  describe '#save' do
+    it 'adds types into an array of saved types' do
+      test_type = Type.new('Italian')
+      test_type.save
+      expect(Type.all).to eq [test_type]
+    end
+  end
+
+end
