@@ -10,6 +10,10 @@ class Type
     @@types << self
   end
 
+  def Type.clear
+    @@types =[]
+  end
+
   def initialize(type)
     @type = type
   end

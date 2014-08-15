@@ -1,6 +1,10 @@
 require 'rspec'
 require 'types'
 describe Type do
+  before do
+    Type.clear
+  end
+
   it 'initializes a new food group' do
     test_type = Type.new('Mexican')
     expect(test_type).to be_an_instance_of Type
